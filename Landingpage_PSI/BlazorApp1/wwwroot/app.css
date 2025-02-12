@@ -49,3 +49,27 @@ h1:focus {
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
 }
+
+.Flex-Sobremim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.SobreMim-Imagem{
+    margin-right: 10px;
+    
+}
+
+.SobreMim-Texto{
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    ;
+}
+
+.teste{
+    height: 500px;
+    width: 500px;
+}
