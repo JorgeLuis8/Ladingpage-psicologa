@@ -1,11 +1,10 @@
 using BlazorApp1.Components;
 using MudBlazor.Services;
 
-builder.Services.AddMudServices();
-
-
-
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddMudServices();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()

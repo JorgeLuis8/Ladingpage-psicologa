@@ -1,4 +1,13 @@
 ﻿@inherits LayoutComponentBase
+@* Required *@
+<MudThemeProvider />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
 
 <div class="page">
     <div class="sidebar">
@@ -15,6 +24,8 @@
         </article>
     </main>
 </div>
+
+
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.
