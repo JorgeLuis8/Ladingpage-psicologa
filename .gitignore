@@ -1,0 +1,50 @@
+# Visual Studio
+.vs/
+
+# Build e artefatos
+bin/
+obj/
+out/
+
+# Dependências e pacotes
+*.nuget/
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Configurações de usuário
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs e cache
+*.log
+logs/
+*.cache
+*.pdb
+
+# Configurações do IIS
+IISExpress/
+iisexpress.config
+
+# Arquivos de publicação e deploy
+publish/
+wwwroot/
+
+# Configuração do Rider/JetBrains
+.idea/
+*.sln.iml
+
+# Docker
+.dockerignore
+**/Dockerfile
+**/docker-compose*
+
+# Git e sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.tmp
