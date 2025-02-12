@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jorge\\OneDrive\\Documentos\\GitHub\\Ladingpage-psicologa\\Landingpage_PSI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74F7D2E7-BD06-4C8C-9416-1855EB2DD136}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\jorge\\onedrive\\documentos\\github\\ladingpage-psicologa\\landingpage_psi\\blazorapp1\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74F7D2E7-BD06-4C8C-9416-1855EB2DD136}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F7D2E7-BD06-4C8C-9416-1855EB2DD136}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\jorge\\onedrive\\documentos\\github\\ladingpage-psicologa\\landingpage_psi\\blazorapp1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74F7D2E7-BD06-4C8C-9416-1855EB2DD136}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\Documentos\\GitHub\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\Documentos\\GitHub\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "BlazorApp1\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T18:04:44.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\jorge\\OneDrive\\Documentos\\GitHub\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\jorge\\OneDrive\\Documentos\\GitHub\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "BlazorApp1\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T18:04:00.817Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
