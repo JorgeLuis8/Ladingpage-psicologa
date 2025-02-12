@@ -24,22 +24,25 @@ A landing page foi criada para ser leve, responsiva e acessível, garantindo uma
 ✔️ Sem dependência de JavaScript ou Bootstrap  
 
 📂 Estrutura do Projeto
+
+/NomeDoProjeto
 /NomeDoProjeto
 │── /Pages
-│   ├── Index.razor         # Página inicial
-│   ├── Sobre.razor         # Página sobre a psicóloga
-│   ├── Contato.razor       # Formulário de contato
-│   ├── Horarios.razor      # Tabela de horários
+│   ├── Index.razor          # Página inicial
+│   ├── Sobre.razor          # Página sobre a psicóloga
+│   ├── Contato.razor        # Formulário de contato
+│   ├── Horarios.razor       # Tabela de horários
+│
 │── /Shared
-│   ├── MainLayout.razor    # Layout principal
-│   ├── NavMenu.razor       # Menu de navegação
+│   ├── MainLayout.razor     # Layout principal
+│   ├── NavMenu.razor        # Menu de navegação
+│
 │── /wwwroot
-│   ├── css/                # Estilos personalizados
-│── appsettings.json        # Configurações da aplicação
-│── Program.cs              # Ponto de entrada da aplicação
-│── NomeDoProjeto.csproj    # Arquivo do projeto .NET
-
-
+│   ├── css/                 # Estilos personalizados
+│
+│── appsettings.json         # Configurações da aplicação
+│── Program.cs               # Ponto de entrada da aplicação
+│── NomeDoProjeto.csproj     # Arquivo do projeto .NET
 
 ## 📝 Como Contribuir
 
