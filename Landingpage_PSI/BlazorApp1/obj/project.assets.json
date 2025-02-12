@@ -701,24 +701,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PurooLight\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jorge\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PurooLight\\source\\repos\\JorgeLuis8\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\BlazorApp1.csproj",
+      "projectUniqueName": "C:\\Users\\jorge\\OneDrive\\Documentos\\GitHub\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\BlazorApp1.csproj",
       "projectName": "BlazorApp1",
-      "projectPath": "C:\\Users\\PurooLight\\source\\repos\\JorgeLuis8\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\BlazorApp1.csproj",
-      "packagesPath": "C:\\Users\\PurooLight\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PurooLight\\source\\repos\\JorgeLuis8\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\obj\\",
+      "projectPath": "C:\\Users\\jorge\\OneDrive\\Documentos\\GitHub\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\BlazorApp1.csproj",
+      "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jorge\\OneDrive\\Documentos\\GitHub\\Ladingpage-psicologa\\Landingpage_PSI\\BlazorApp1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\PurooLight\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -744,8 +739,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -775,7 +769,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
