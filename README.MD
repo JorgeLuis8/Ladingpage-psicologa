@@ -23,6 +23,24 @@ A landing page foi criada para ser leve, responsiva e acessível, garantindo uma
 ✔️ Design responsivo e acessível com **MudBlazor**  
 ✔️ Sem dependência de JavaScript ou Bootstrap  
 
+📂 Estrutura do Projeto
+/NomeDoProjeto
+│── /Pages
+│   ├── Index.razor         # Página inicial
+│   ├── Sobre.razor         # Página sobre a psicóloga
+│   ├── Contato.razor       # Formulário de contato
+│   ├── Horarios.razor      # Tabela de horários
+│── /Shared
+│   ├── MainLayout.razor    # Layout principal
+│   ├── NavMenu.razor       # Menu de navegação
+│── /wwwroot
+│   ├── css/                # Estilos personalizados
+│── appsettings.json        # Configurações da aplicação
+│── Program.cs              # Ponto de entrada da aplicação
+│── NomeDoProjeto.csproj    # Arquivo do projeto .NET
+
+
+
 ## 📝 Como Contribuir
 
 Se quiser sugerir melhorias ou corrigir problemas, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**. Toda ajuda é bem-vinda! 🚀
