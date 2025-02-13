@@ -109,7 +109,7 @@
 }
  
 .feature-card {
-    width: 280px; 
+    width: 400px; 
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -142,7 +142,7 @@ h3 {
  
 p {
     color: #666;
-    font-size: 16px;
+    font-size: 19px;
 }
  
 strong {
