@@ -1,4 +1,4 @@
-# 🌿 Landing Page - Psicóloga [Nome da Psicóloga]
+# 🌿 Landing Page - Psicóloga Maria Cecília Ferreira Luz
 
 Este repositório contém o código-fonte de uma landing page profissional desenvolvida em **Blazor** com **MudBlazor**, sem dependência de JavaScript ou Bootstrap. O objetivo do projeto é apresentar informações sobre a psicóloga Maria Cecília Ferreira Luz, sua formação, especialidades, horários de atendimento e formas de contato.
 
