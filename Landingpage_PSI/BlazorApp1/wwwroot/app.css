@@ -48,9 +48,9 @@
     color: black;
 }
 .ImageAbout{
-    height: 500px;
-    width: 500px;
-    border-radius: 50px;
+    border-radius: 20px;
+   
+   
 }
 @media screen and (max-width: 768px) {
     .ImageAbout {
