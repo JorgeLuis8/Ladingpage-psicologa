@@ -1,34 +1,38 @@
-﻿<!--
-
-This is the footer menu component. It is used to display the footer menu of the application.
--->
-
-<div class="footer">
+﻿<div class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>BlazorApp1</h3>
-                <p>BlazorApp1 is a sample application built with Blazor WebAssembly.</p>
+        <div class="footer-row">
+            <!-- Atenção -->
+            <div class="footer-column">
+                <h3>ATENÇÃO:</h3>
+                <p>Este site não oferece atendimento imediato a pessoas em crise suicida.</p>
+                <p>Em caso de crise, ligue para o <strong>CVV (telefone 188)</strong>. Em caso de emergência, procure o hospital mais próximo.</p>
+                <p>Havendo risco de morte, ligue imediatamente para o <strong>SAMU (telefone 192)</strong>.</p>
             </div>
-            <div class="col-md-4">
-                <h3>Links</h3>
+
+            <!-- Contato -->
+            <div class="footer-column">
+                <h3>CONTATO:</h3>
+                <p>📱 <a href="https://wa.me/5521999999999" target="_blank">+55 (21) 9 7030-8986</a></p>
+            </div>
+
+            <!-- Navegação -->
+            <div class="footer-column">
+                <h3>NAVEGAÇÃO:</h3>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="counter">Counter</a></li>
-                    <li><a href="weather">Weather</a></li>
+                    <li><a href="">Início</a></li>
+                    <li><a href="beneficios">Benefícios</a></li>
+                    <li><a href="autoconhecimento">Autoconhecimento</a></li>
+                    <li><a href="paraquem">Para Quem É</a></li>
+                    <li><a href="sobre">Quem sou eu</a></li>
+                    <li><a href="terapia">Terapia Breve</a></li>
+                    <li><a href="faq">FAQ</a></li>
                 </ul>
-            </div>
-            <div class="col-md-4">
-                <h3>Contact</h3>
-                <p>Email:
-                    <a href="mailto: [email protected]"> [email protected]</a>
-                </p>
             </div>
         </div>
     </div>
+
+    <!-- Rodapé inferior -->
+    <div class="footer-bottom">
+        <p>Site Criado Por: <strong>Lux Digital Assessoria</strong></p>
+    </div>
 </div>
-
-
-@code {
-
-}

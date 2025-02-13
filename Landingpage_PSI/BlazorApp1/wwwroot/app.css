@@ -113,7 +113,7 @@
 }
  
 .feature-card {
-    width: 280px; 
+    width: 400px; 
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -146,7 +146,7 @@ h3 {
  
 p {
     color: #666;
-    font-size: 16px;
+    font-size: 19px;
 }
  
 strong {
@@ -176,3 +176,79 @@ strong {
         margin-top: 10px; /* Evita sobreposição do botão */
     }
 }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+
+.footer {
+    background-color: #E3E3E3; /* Cor semelhante ao fundo da imagem */
+    color: #333;
+    padding: 40px 20px;
+}
+
+    .footer .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer p,
+.footer a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+    .footer ul li {
+        margin-bottom: 5px;
+    }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+/* Rodapé inferior */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+}
+
