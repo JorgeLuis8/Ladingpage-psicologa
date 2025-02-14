@@ -556,7 +556,6 @@ strong {
 }
 
 
-
 .header-flex {
     display: flex;
     align-items: center;
@@ -636,4 +635,90 @@ strong {
     width: 150px;
     height: 150px;
    
+}
+
+.faq-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Ícone e título */
+.faq-left {
+    text-align: center;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.faq-icon img {
+    background-color: #535A27;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80px;
+}
+
+.faq-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #535A27;
+}
+
+.faq-left p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Acordeão */
+.faq-right {
+    flex: 1;
+    max-width: 600px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+    .faq-item:hover {
+        background-color: #f0f0f0;
+    }
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #535A27;
+}
+
+.faq-toggle {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.faq-answer {
+    padding: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .faq-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .faq-right {
+        max-width: 100%;
+    }
 }

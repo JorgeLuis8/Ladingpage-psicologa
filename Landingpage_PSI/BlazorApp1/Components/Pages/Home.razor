@@ -126,3 +126,80 @@
     </div>
 </div>
 
+<div class="faq-section">
+    <div class="faq-left">
+        <div class="faq-icon">
+            <img src="images/faq-icon.svg" alt="FAQ Icon" />
+        </div>
+        <h2>Perguntas Frequentes</h2>
+        <p>Tire as principais dúvidas aqui.</p>
+    </div>
+
+    <div class="faq-right">
+        <div class="faq-item" @onclick="() => ToggleFaq(0)">
+            <div class="faq-question">
+                <span class="faq-toggle">@GetIcon(0)</span>
+                Quanto tempo dura uma sessão de terapia?
+            </div>
+            @if (faqState[0])
+            {
+                <div class="faq-answer">
+                    <p>As sessões geralmente duram 50 minutos.</p>
+                </div>
+            }
+        </div>
+
+        <div class="faq-item" @onclick="() => ToggleFaq(1)">
+            <div class="faq-question">
+                <span class="faq-toggle">@GetIcon(1)</span>
+                Como verificar os horários disponíveis?
+            </div>
+            @if (faqState[1])
+            {
+                <div class="faq-answer">
+                    <p>Você pode verificar os horários disponíveis na nossa página de agendamentos.</p>
+                </div>
+            }
+        </div>
+
+        <div class="faq-item" @onclick="() => ToggleFaq(2)">
+            <div class="faq-question">
+                <span class="faq-toggle">@GetIcon(2)</span>
+                Como agendar uma sessão?
+            </div>
+            @if (faqState[2])
+            {
+                <div class="faq-answer">
+                    <p>Para agendar, basta clicar no botão "Agendar Sessão Online" e escolher um horário.</p>
+                </div>
+            }
+        </div>
+
+        <div class="faq-item" @onclick="() => ToggleFaq(3)">
+            <div class="faq-question">
+                <span class="faq-toggle">@GetIcon(3)</span>
+                Como funciona o tratamento?
+            </div>
+            @if (faqState[3])
+            {
+                <div class="faq-answer">
+                    <p>O tratamento consiste em sessões regulares adaptadas às suas necessidades.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool[] faqState = new bool[4];
+
+    private void ToggleFaq(int index)
+    {
+        faqState[index] = !faqState[index];
+    }
+
+    private string GetIcon(int index)
+    {
+        return faqState[index] ? "🔽" : "▶";
+    }
+}
