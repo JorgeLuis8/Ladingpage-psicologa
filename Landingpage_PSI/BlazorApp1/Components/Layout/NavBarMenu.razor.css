@@ -1,0 +1,103 @@
+.my-nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.3rem 0; /* reduzido */
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem; /* reduzido */
+    position: relative;
+  }
+  
+  .Imagelogo {
+    width: 80px;    /* reduzido */
+    height: auto;   /* mantém proporção */
+    margin-left: 0; /* sem deslocar */
+  }
+  
+  .nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-left: 1rem; /* menor que 2rem */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 0.9rem;      /* fonte menor */
+    letter-spacing: 0.1rem; /* espaçamento menor */
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007BFF;
+  }
+  
+  
+  /* Oculta o checkbox padrão */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Estilo do botão hambúrguer (desktop oculto, mobile visível) */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+  }
+  .hamburger span {
+    display: block;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+  }
+  
+  /* Media Query para dispositivos com largura até 768px */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    /* Exibe o botão hambúrguer */
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Esconde o menu por padrão no mobile */
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      padding: 1rem 0;
+    }
+    
+    .nav-item {
+      margin: 0.5rem 0; /* Espaçamento vertical entre itens */
+    }
+    
+    /* Quando o checkbox estiver marcado, exibe o menu */
+    #menu-toggle:checked + .hamburger + .nav-menu {
+      display: flex;
+    }
+  }

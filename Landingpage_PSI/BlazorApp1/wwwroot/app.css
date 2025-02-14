@@ -55,16 +55,17 @@
 }
 .ImageAbout {
     border-radius: 20px;
-    width: 100%;    /* A imagem ocupará 100% da largura do container pai */
-    height: auto;   /* Mantém a proporção original da imagem */
-    max-width: 600px;
-    min-height: 600px; /* Define uma largura máxima para telas maiores */
+    width: 100%;        /* A imagem ocupará 100% da largura do container pai */
+    height: auto;       /* Mantém a proporção original da imagem */
+    max-width: 600px;   /* Limita a largura máxima em telas grandes */
   }
+  
   @media screen and (max-width: 768px) {
     .ImageAbout {
-      max-width: 90%; /* Em telas menores, a imagem ocupará até 90% da largura do container */
+      max-width: 90%;   /* Em telas menores, a imagem ocupará até 90% do container */
     }
   }
+  
   
 
 .ButtonSend {
@@ -565,104 +566,10 @@ strong {
     flex-wrap: wrap;
 }
 
-.navbar {
-    margin-left: 0; /* Margem grande para telas grandes */
-    padding: 0;
-}
 
-/* Em telas menores que 768px, remove a margem para não quebrar o layout */
-@media (max-width: 768px) {
-  .navbar {
-    margin-left: 0;
-  }
-}
 
-/* Barra de navegação principal */
-.my-nav {
-    background-color: #fff; /* Fundo branco */
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 0;
-  }
-  
-  /* Container centralizado */
-  .nav-container {
-    max-width: 1200px;
-    margin: 0 ;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-  }
-  
-  /* Logo / Marca */
-  .nav-brand {
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Menu de navegação */
-  .nav-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  /* Itens do menu */
-  .nav-item {
-    margin-left: 2rem;  /* Espaço entre os itens */
-  }
-  
-  /* Links do menu */
-  .nav-link {
-    text-decoration: none;
-    font-size: 1.5rem;      /* Tamanho da fonte */
-    letter-spacing: 0.2rem; /* Espaçamento entre letras */
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  /* Efeito hover */
-  .nav-link:hover {
-    color: #007BFF;
-  }
-  
-.Imagelogo{
-    margin-left: 350px;
-    width: 150px;
-    height: 150px;
-   
-}
-@media (max-width: 768px) {
-    .nav-container {
-      /* Empilha os elementos verticalmente */
-      flex-direction: column;
-      justify-content: center; 
-    }
-  
-    .Imagelogo {
-      /* Centraliza a logo ou ajusta margens */
-      margin-left: 0; 
-      margin-bottom: 1rem; /* Espaço abaixo da logo */
-    }
-  
-    .nav-menu {
-      /* Empilha os itens do menu em coluna */
-      flex-direction: column;
-      align-items: center;      /* Centraliza os itens */
-      justify-content: center;
-    }
-  
-    .nav-item {
-      margin-left: 0;          /* Remove espaçamento horizontal */
-      margin-bottom: 1rem;     /* Espaço entre itens na vertical */
-    }
-  }
 
+  
 
 .faq-section {
     display: flex;
