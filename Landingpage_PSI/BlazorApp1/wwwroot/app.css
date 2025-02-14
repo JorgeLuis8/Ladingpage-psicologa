@@ -1,3 +1,4 @@
+
 .aboreto-regular {
     font-family: "Aboreto", serif;
     font-weight: 400;
@@ -5,16 +6,19 @@
   }
 
 .Flex-Aboutme {
-    min-height: 100vh; /* ✅ Garante altura mínima, mas permite crescimento */
+    min-height: 100vh;
     margin-top: 50px;
     padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: #ffffff;
     padding-bottom: 50px;
     margin-bottom: 0px;
+    
+
 }
+
 
 .Aboutme-Image{
     align-items: center;
@@ -52,7 +56,8 @@
     border-radius: 20px;
     width: 100%;    /* A imagem ocupará 100% da largura do container pai */
     height: auto;   /* Mantém a proporção original da imagem */
-    max-width: 600px; /* Define uma largura máxima para telas maiores */
+    max-width: 600px;
+    min-height: 600px; /* Define uma largura máxima para telas maiores */
   }
   @media screen and (max-width: 768px) {
     .ImageAbout {
