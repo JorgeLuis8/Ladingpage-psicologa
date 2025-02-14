@@ -260,3 +260,30 @@ strong {
     border-top: 1px solid #ccc;
 }
 
+.nav-button {
+    font-size: 20px;  /* Aumenta o tamanho da fonte */
+    font-weight: 700; /* 400 é normal, 700 é bold */
+    justify-content: space-around;
+}
+
+
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* Permite que os elementos quebrem linha em telas pequenas */
+    flex-wrap: wrap;
+}
+
+.navbar {
+    margin-left: 0; /* Margem grande para telas grandes */
+    padding: 0;
+}
+
+/* Em telas menores que 768px, remove a margem para não quebrar o layout */
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: 0;
+  }
+}
