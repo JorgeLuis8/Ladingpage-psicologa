@@ -31,18 +31,24 @@
   .nav-item {
     margin-left: 1rem; /* menor que 2rem */
   }
-  
-  .nav-link {
-    text-decoration: none;
-    font-size: 0.9rem;      /* fonte menor */
-    letter-spacing: 0.1rem; /* espaçamento menor */
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #007BFF;
-  }
+
+    .nav-item:hover {
+        background-color: #f8f9fa;
+        border-radius: 0.25rem;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        font-size: 1.1rem; /* fonte menor */
+        letter-spacing: 0.1rem; /* espaçamento menor */
+        color: #525926;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #525926;
+    }
+
   
   
   /* Oculta o checkbox padrão */
