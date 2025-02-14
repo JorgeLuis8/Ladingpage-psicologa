@@ -360,3 +360,186 @@ strong {
 }
 
 
+/* Seção Principal */
+.sintomas-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #EBEBEB;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+    /* Títulos */
+    .sintomas-section h4 {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .sintomas-section h2 {
+        font-size: 26px;
+        font-weight: bold;
+        color: #525926;
+        margin-bottom: 10px;
+    }
+
+    .sintomas-section p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+/* Grid dos sintomas */
+.sintomas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo dos botões */
+.sintoma-item {
+    background: #525926;
+    color: azure;
+    padding: 15px 20px;
+    border-radius: 20px 0 20px 0px; /* Apenas os cantos esquerdo superior e inferior arredondados */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .sintoma-item:hover {
+        transform: scale(1.05);
+        transition: 1.0s;
+        background: #B5BF69;
+    }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sintomas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .sintomas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Seção Principal */
+.terapia-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+}
+
+/* Lado Esquerdo - Imagem */
+.terapia-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-background {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: #8E974F; /* Cor vinho do fundo */
+    border-radius: 20px;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Lado Direito - Texto */
+.terapia-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+    .terapia-text h4 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #999;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .terapia-text h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #535A27;
+        margin-bottom: 15px;
+    }
+
+    .terapia-text p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .terapia-text strong {
+        font-weight: bold;
+        color: #000;
+    }
+
+/* Botão CTA */
+.btn-agendar {
+    background-color: #535A27;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .btn-agendar:hover {
+        background-color: #8E974F;
+    }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .terapia-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .terapia-text {
+        max-width: 100%;
+    }
+
+    .image-background {
+        width: 80%;
+        height: 80%;
+    }
+
+    .main-image {
+        max-width: 100%;
+    }
+}

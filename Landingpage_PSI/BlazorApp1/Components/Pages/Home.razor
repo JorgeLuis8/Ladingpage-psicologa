@@ -69,3 +69,47 @@
     </div>
 </div>
 
+<div class="sintomas-section">
+    <h4>PARA QUEM É?</h4>
+    <h2>VOCÊ SE IDENTIFICA COM ALGUM DESSES SINTOMAS?</h2>
+    <p>A psicoterapia vai te ajudar a melhorar.</p>
+
+    <div class="sintomas-grid">
+        @foreach (var sintoma in sintomas)
+        {
+            <div class="sintoma-item">@sintoma</div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<string> sintomas = new()
+    {
+        "Pensamentos Excessivos",
+        "Excesso de Cobrança",
+        "Dependência Emocional",
+        "Estresse Constante",
+        "Desgaste Emocional",
+        "Problemas de Autoestima"
+    };
+}
+
+<div class="terapia-section">
+    <!-- Lado Esquerdo: Imagem Sobreposta -->
+    <div class="terapia-image">
+        <div class="image-background"></div>
+        <img src="~/images/terapia.jpg" alt="Terapia Breve" class="main-image" />
+    </div>
+
+    <!-- Lado Direito: Texto e Botão -->
+    <div class="terapia-text">
+        <h4>TERAPIA BREVE</h4>
+        <h2>A MINHA ABORDAGEM</h2>
+        <p>Oriento o meu trabalho pelo viés da <strong>psicoterapia breve</strong> sempre que o caso permite.</p>
+        <p>Além disso, busco adaptar as técnicas e intervenções às necessidades específicas de cada paciente.</p>
+        <p><strong>Meu objetivo nas sessões é te auxiliar nessa jornada de transformação e contribuir com novas perspectivas para as suas questões.</strong></p>
+
+        <button class="btn-agendar">Agendar Sessão Online</button>
+    </div>
+</div>
+
