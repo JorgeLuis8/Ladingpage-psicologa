@@ -20,7 +20,6 @@
 
 }
 
-
 .Aboutme-Image{
     align-items: center;
     margin-right: 30px;
@@ -569,16 +568,15 @@ strong {
 
 
 
-  
 
 .faq-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #EBEBEB;
+    background-color: #E3E3E3;
     border-radius: 10px;
-    width: 100%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -586,8 +584,6 @@ strong {
 .faq-left {
     text-align: center;
     max-width: 400px;
-    margin-right: 20px;
-    margin-left: 50px;
 }
 
 .faq-icon img {
@@ -639,11 +635,19 @@ strong {
     font-size: 20px;
 }
 
+/* Animação de abrir e fechar */
 .faq-answer {
-    padding: 10px;
-    font-size: 16px;
-    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
 }
+
+    .faq-answer.open {
+        max-height: 500px; /* Ajuste conforme necessário */
+        opacity: 1;
+        padding: 10px 0;
+    }
 
 /* Responsividade */
 @media (max-width: 768px) {

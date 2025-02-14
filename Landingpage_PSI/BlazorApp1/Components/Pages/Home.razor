@@ -124,61 +124,30 @@
     </div>
 
     <div class="faq-right">
-        <div class="faq-item" @onclick="() => ToggleFaq(0)">
-            <div class="faq-question">
-                <span class="faq-toggle">@GetIcon(0)</span>
-                Quanto tempo dura uma sessão de terapia?
-            </div>
-            @if (faqState[0])
-            {
-                <div class="faq-answer">
-                    <p>As sessões geralmente duram 50 minutos.</p>
+        @for (int i = 0; i < faqQuestions.Count; i++)
+        {
+            <div class="faq-item">
+                <div class="faq-question" @onclick="() => ToggleFaq(i)">
+                    <span class="faq-toggle">@GetIcon(i)</span>
+                    @faqQuestions[i].Question
                 </div>
-            }
-        </div>
-
-        <div class="faq-item" @onclick="() => ToggleFaq(1)">
-            <div class="faq-question">
-                <span class="faq-toggle">@GetIcon(1)</span>
-                Como verificar os horários disponíveis?
-            </div>
-            @if (faqState[1])
-            {
-                <div class="faq-answer">
-                    <p>Você pode verificar os horários disponíveis na nossa página de agendamentos.</p>
+                <div class="faq-answer @(faqState[i] ? "open" : "")">
+                    <p>@faqQuestions[i].Answer</p>
                 </div>
-            }
-        </div>
-
-        <div class="faq-item" @onclick="() => ToggleFaq(2)">
-            <div class="faq-question">
-                <span class="faq-toggle">@GetIcon(2)</span>
-                Como agendar uma sessão?
             </div>
-            @if (faqState[2])
-            {
-                <div class="faq-answer">
-                    <p>Para agendar, basta clicar no botão "Agendar Sessão Online" e escolher um horário.</p>
-                </div>
-            }
-        </div>
-
-        <div class="faq-item" @onclick="() => ToggleFaq(3)">
-            <div class="faq-question">
-                <span class="faq-toggle">@GetIcon(3)</span>
-                Como funciona o tratamento?
-            </div>
-            @if (faqState[3])
-            {
-                <div class="faq-answer">
-                    <p>O tratamento consiste em sessões regulares adaptadas às suas necessidades.</p>
-                </div>
-            }
-        </div>
+        }
     </div>
 </div>
 
 @code {
+    private List<FaqItem> faqQuestions = new()
+    {
+        new FaqItem { Question = "Quanto tempo dura uma sessão de terapia?", Answer = "As sessões geralmente duram 50 minutos." },
+        new FaqItem { Question = "Como verificar os horários disponíveis?", Answer = "Você pode verificar os horários disponíveis na nossa página de agendamentos." },
+        new FaqItem { Question = "Como agendar uma sessão?", Answer = "Para agendar, basta clicar no botão 'Agendar Sessão Online' e escolher um horário." },
+        new FaqItem { Question = "Como funciona o tratamento?", Answer = "O tratamento consiste em sessões regulares adaptadas às suas necessidades." }
+    };
+
     private bool[] faqState = new bool[4];
 
     private void ToggleFaq(int index)
@@ -188,6 +157,13 @@
 
     private string GetIcon(int index)
     {
-        return faqState[index] ? "🔽" : "▶";
+        return faqState[index] ? "▼" : "▶";
+    }
+
+    private class FaqItem
+    {
+        public string Question { get; set; }
+        public string Answer { get; set; }
     }
 }
+
