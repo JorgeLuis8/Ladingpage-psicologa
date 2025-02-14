@@ -637,3 +637,29 @@ strong {
     height: 150px;
    
 }
+@media (max-width: 768px) {
+    .nav-container {
+      /* Empilha os elementos verticalmente */
+      flex-direction: column;
+      justify-content: center; 
+    }
+  
+    .Imagelogo {
+      /* Centraliza a logo ou ajusta margens */
+      margin-left: 0; 
+      margin-bottom: 1rem; /* Espaço abaixo da logo */
+    }
+  
+    .nav-menu {
+      /* Empilha os itens do menu em coluna */
+      flex-direction: column;
+      align-items: center;      /* Centraliza os itens */
+      justify-content: center;
+    }
+  
+    .nav-item {
+      margin-left: 0;          /* Remove espaçamento horizontal */
+      margin-bottom: 1rem;     /* Espaço entre itens na vertical */
+    }
+  }
+  
