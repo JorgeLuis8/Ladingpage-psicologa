@@ -204,7 +204,7 @@ strong {
 
 
 .footer {
-    background-color: #E3E3E3; /* Cor semelhante ao fundo da imagem */
+    background-color: #ffffff; /* Cor semelhante ao fundo da imagem */
     color: #333;
     padding: 40px 20px;
 }
@@ -653,13 +653,15 @@ strong {
     text-align: center;
     max-width: 400px;
     margin-right: 20px;
+    margin-left: 50px;
 }
 
 .faq-icon img {
     background-color: #535A27;
     padding: 20px;
     border-radius: 15px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
 }
 
 .faq-left h2 {
