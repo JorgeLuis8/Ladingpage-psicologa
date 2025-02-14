@@ -1,10 +1,12 @@
-# 🌿 Landing Page - Psicóloga [Nome da Psicóloga]
+# 🌿 Landing Page - Psicóloga Maria Cecília Ferreira Luz
 
-Este repositório contém o código-fonte de uma landing page profissional desenvolvida em **Blazor** com **MudBlazor**, sem dependência de JavaScript ou Bootstrap. O objetivo do projeto é apresentar informações sobre a psicóloga [Nome da Psicóloga], sua formação, especialidades, horários de atendimento e formas de contato.
+Este repositório contém o código-fonte de uma landing page profissional desenvolvida em **Blazor** com **MudBlazor**, sem dependência de JavaScript ou Bootstrap. O objetivo do projeto é apresentar informações sobre a psicóloga Maria Cecília Ferreira Luz, sua formação, especialidades, horários de atendimento e formas de contato.
+
 
 ## 📌 Sobre o Projeto
 
 A landing page foi criada para ser leve, responsiva e acessível, garantindo uma experiência fluida para os visitantes. Utilizando **Blazor Server/WebAssembly**, a aplicação oferece uma interface moderna sem necessidade de JavaScript externo.
+
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -13,6 +15,7 @@ A landing page foi criada para ser leve, responsiva e acessível, garantindo uma
 - **.NET 7/8** (dependendo da versão utilizada)
 - **C#** para lógica de aplicação
 - **CSS puro** para personalizações adicionais
+
 
 ## 🎨 Funcionalidades da Landing Page
 
@@ -24,14 +27,8 @@ A landing page foi criada para ser leve, responsiva e acessível, garantindo uma
 ✔️ Sem dependência de JavaScript ou Bootstrap  
 
 
-
-## 📝 Como Contribuir
-
-Se quiser sugerir melhorias ou corrigir problemas, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**. Toda ajuda é bem-vinda! 🚀
-
 ## 📬 Contato
 
 Caso tenha dúvidas ou sugestões, entre em contato:
 
-📧 **Email**: [email@example.com](mailto:email@example.com)  
-🌐 **Website**: [www.seusite.com](https://www.seusite.com)  
+📧 **Email**: [jorgeluuis504@gmail.com](mailto:jorgeluuis504@gmail.com)
