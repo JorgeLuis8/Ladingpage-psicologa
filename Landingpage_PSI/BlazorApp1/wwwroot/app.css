@@ -1,6 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
 
 
 .aboreto-regular {
@@ -10,16 +7,19 @@ html {
   }
 
 .Flex-Aboutme {
-    min-height: 100vh; /* ✅ Garante altura mínima, mas permite crescimento */
+    min-height: 100vh;
     margin-top: 50px;
     padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: white;
+    background-color: #ffffff;
     padding-bottom: 50px;
     margin-bottom: 0px;
+    
+
 }
+
 
 .Aboutme-Image{
     align-items: center;
@@ -53,16 +53,19 @@ html {
     font-weight: 26.4px;
     color: black;
 }
-.ImageAbout{
+.ImageAbout {
     border-radius: 20px;
-   
-   
-}
-@media screen and (max-width: 768px) {
+    width: 100%;    /* A imagem ocupará 100% da largura do container pai */
+    height: auto;   /* Mantém a proporção original da imagem */
+    max-width: 600px;
+    min-height: 600px; /* Define uma largura máxima para telas maiores */
+  }
+  @media screen and (max-width: 768px) {
     .ImageAbout {
-      width: 90%; /* Em telas pequenas, a imagem ocupará 90% da largura do container */
+      max-width: 90%; /* Em telas menores, a imagem ocupará até 90% da largura do container */
     }
   }
+  
 
 .ButtonSend {
  
