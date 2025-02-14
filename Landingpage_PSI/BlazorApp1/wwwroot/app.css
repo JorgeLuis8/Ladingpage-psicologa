@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 .aboreto-regular {
     font-family: "Aboreto", serif;
     font-weight: 400;
@@ -437,10 +442,9 @@ strong {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F9F9F9;
     padding: 50px;
     border-radius: 10px;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
     gap: 50px;
 }
@@ -457,7 +461,6 @@ strong {
     position: absolute;
     width: 90%;
     height: 90%;
-    background-color: #8E974F; /* Cor vinho do fundo */
     border-radius: 20px;
     top: 20px;
     left: 20px;
@@ -470,7 +473,6 @@ strong {
     border-radius: 20px;
     position: relative;
     z-index: 1;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Lado Direito - Texto */
