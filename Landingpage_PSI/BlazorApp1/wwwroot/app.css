@@ -253,3 +253,110 @@ strong {
     border-top: 1px solid #ccc;
 }
 
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: white;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+    .about-text h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #525926;
+    }
+
+    .about-text .crp {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .about-text strong {
+        font-weight: bold;
+        color: #000;
+    }
+
+.btn-agendar {
+    background-color: #525926;
+    width: 100%;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    .btn-agendar:hover {
+        background-color: #B5BF69;
+        transition: 1.0s;
+    }
+
+/* Imagem e Badge */
+.about-image {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 100px 40px 40px 100px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #0A192F;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .profile-image {
+        max-width: 100%;
+    }
+
+    .badge {
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+    }
+}
+
+
