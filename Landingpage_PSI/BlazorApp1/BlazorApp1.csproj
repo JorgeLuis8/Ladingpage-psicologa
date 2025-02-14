@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\images\Desenho De Ilustração Vetorial Lâmpada Com Mão Desenhada Estilo Doodle PNG , Desenho De Rato, Desenho De Lâmpada, Desenho à Mão Imagem PNG e Vetor Para Download Gratuito.jpeg\**" />
+    <Content Remove="wwwroot\images\Desenho De Ilustração Vetorial Lâmpada Com Mão Desenhada Estilo Doodle PNG , Desenho De Rato, Desenho De Lâmpada, Desenho à Mão Imagem PNG e Vetor Para Download Gratuito.jpeg\**" />
+    <EmbeddedResource Remove="wwwroot\images\Desenho De Ilustração Vetorial Lâmpada Com Mão Desenhada Estilo Doodle PNG , Desenho De Rato, Desenho De Lâmpada, Desenho à Mão Imagem PNG e Vetor Para Download Gratuito.jpeg\**" />
+    <None Remove="wwwroot\images\Desenho De Ilustração Vetorial Lâmpada Com Mão Desenhada Estilo Doodle PNG , Desenho De Rato, Desenho De Lâmpada, Desenho à Mão Imagem PNG e Vetor Para Download Gratuito.jpeg\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MudBlazor" Version="8.2.0" />
   </ItemGroup>
 
