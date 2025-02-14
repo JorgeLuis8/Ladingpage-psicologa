@@ -18,7 +18,7 @@
     left: 1rem;         /* Distância da borda esquerda */
     top: 50%;           /* Para centralizar verticalmente */
     transform: translateY(-50%);
-    width: 80px;        /* Ajuste conforme desejar */
+    width: 60px;        /* Ajuste conforme desejar */
     height: auto;
   }
 
