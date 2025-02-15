@@ -767,64 +767,60 @@ strong {
 /* Container principal */
 .schedule-container {
     display: flex;
-    flex-direction: column; /* Organiza os elementos em coluna */
-    align-items: center; /* Centraliza tudo */
+    flex-direction: column;
+    align-items: center; /* Mantém tudo centralizado */
     justify-content: center;
     width: 100%;
     padding: 20px;
 }
 
-/* Bloco Ícone + Texto */
+/* Ícone + Texto (sempre juntos e alinhados no centro) */
 .icon-text-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o ícone e o texto */
+    align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 20px; /* Espaço entre o ícone/texto e a tabela */
+    margin-bottom: 20px; /* Espaço entre o texto e a tabela */
 }
 
-/* Fundo + Ícone */
+/* Ícone sem fundo */
 .icon-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px; /* Tamanho do fundo */
-    height: 80px;
-    background-color: #535A27;
-    border-radius: 15px;
-    margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+    margin-bottom: 10px;
 }
 
-/* Ícone dentro do fundo */
+/* Ajusta o tamanho do ícone */
 .icon-box img {
-    width: 40px;
-    height: 40px;
+    width: 80px; /* Ícone maior */
+    height: 80px;
 }
 
 /* Texto abaixo do ícone */
 .icon-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* Texto um pouco maior */
     font-weight: bold;
     text-align: center;
 }
 
-/* Container da Tabela */
+/* Centraliza a tabela */
 .schedule-table-container {
+    max-width: 600px; /* Ajuste a largura conforme necessário */
     width: 100%;
-    max-width: 600px; /* Ajuste a largura máxima conforme necessário */
 }
 
-/* Estilo da Tabela */
+/* Estilização da tabela */
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
-    text-align: center;
 }
 
 .schedule-table th {
     background-color: #535A27;
     color: white;
+    text-align: left;
     padding: 10px;
 }
 
@@ -835,8 +831,16 @@ strong {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .schedule-container {
+        text-align: center;
+    }
+
+    .icon-text-container {
+        align-items: center;
+        text-align: center;
+    }
+
     .schedule-table-container {
-        max-width: 100%;
-        padding: 0 10px; /* Pequeno espaçamento nas laterais */
+        width: 90%;
     }
 }
