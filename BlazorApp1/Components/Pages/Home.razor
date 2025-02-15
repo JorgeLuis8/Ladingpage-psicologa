@@ -44,9 +44,9 @@
 </div>
 </Animate>>
 
-<Animate Animation="Animations.Fade" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
     <div class="about-section">
         <div class="about-text">
+        <Animate Animation="Animations.FadeUp" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
             <h1>Felipe Almeida</h1>
             <p class="crp">CRP: 03-25159</p>
             <p>
@@ -66,18 +66,22 @@
             </p>
 
             <button class="btn-agendar">Agendar Sessão</button>
+        </Animate>
         </div>
+    <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(1)">
         <div class="about-image">
             <img src="images/ceci4.jpg" alt="Felipe Almeida" class="profile-image">
         </div>
+        </Animate>
     </div>
-</Animate>
 
 
 <div class="sintomas-section">
+    <Animate Animation="Animations.FadeIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
     <h4>PARA QUEM É?</h4>
     <h2>VOCÊ SE IDENTIFICA COM ALGUM DESSES SINTOMAS?</h2>
     <p>A psicoterapia vai te ajudar a melhorar.</p>
+    </Animate>
 
     <Animate Animation="Animations.FadeRight" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(1)">
         <div class="sintomas-grid">
@@ -104,12 +108,12 @@
 <div class="terapia-section">
     <!-- Lado Esquerdo: Imagem Sobreposta -->
 
-    <div class="terapia-image">
     <Animate Animation="Animations.FadeUp" Once="true" Duration="TimeSpan.FromSeconds(2)">
+    <div class="terapia-image">
         <div class="image-background"></div>
         <img src="/images/terapia.jpg" alt="Terapia Breve" class="main-image" />
-    </Animate>
     </div>
+    </Animate>
 
     <!-- Lado Direito: Texto e Botão -->
     <div class="terapia-text">
