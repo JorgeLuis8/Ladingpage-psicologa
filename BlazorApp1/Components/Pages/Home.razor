@@ -11,6 +11,7 @@
         <img class="ImageAbout" src="images/ceci1.jpg" alt="Ceciimg1" />
     </div>
     <div class="Aboutme-Text">
+        <Animate Animation="Animations.FadeIn" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
         <h1 class = "TextH1">MARIA CECILIA FERREIRA LUZ</h1>
         <p class = "TextName">PSICÓLOGA ONLINE | CRP:1234567</p>
         <p class = "TextDesc">
@@ -18,10 +19,12 @@
           Curabitur sit amet mi non urna faucibus sollicitudin ac at turpis.
         </p>
         <button class ="ButtonSend">Agendar Consulta Online</button>
+        </Animate>
 
     </div>
 
 </div>
+<Animate Animation="Animations.FadeUp" Once="true" Duration="TimeSpan.FromSeconds(2)">
 <div class="features-container">
     <div class="feature-card">
         <h3>ATENDIMENTO ONLINE</h3>
@@ -39,48 +42,55 @@
         <p>Assim como na terapia presencial, a terapia online é sigilosa e é realizada em uma <strong>plataforma segura.</strong></p>
     </div>
 </div>
+</Animate>>
 
+    <div class="about-section">
+        <div class="about-text">
+        <Animate Animation="Animations.FadeUp" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
+            <h1>Felipe Almeida</h1>
+            <p class="crp">CRP: 03-25159</p>
+            <p>
+                Sou psicólogo formado desde 2018 pela <strong>UNIFACS (Universidade de Salvador)</strong>,
+                com estágio em vulnerabilidade social, especialização em teoria cognitivo-comportamental e
+                <strong>formação em clínica racializada.</strong>
+            </p>
 
-<div class="about-section">
-    <div class="about-text">
-        <h1>Felipe Almeida</h1>
-        <p class="crp">CRP: 03-25159</p>
+            <p>
+                Sou reconhecido pelo <strong>acolhimento genuíno</strong> e por desenvolver
+                <strong>estratégias personalizadas</strong> para as necessidades de cada paciente.
+            </p>
 
-        <p>
-            Sou psicólogo formado desde 2018 pela <strong>UNIFACS (Universidade de Salvador)</strong>,
-            com estágio em vulnerabilidade social, especialização em teoria cognitivo-comportamental e
-            <strong>formação em clínica racializada.</strong>
-        </p>
+            <p>
+                Tenho uma <strong>abordagem culturalmente sensível</strong>, que garante um
+                atendimento inclusivo e adaptado às experiências e contextos individuais de cada paciente.
+            </p>
 
-        <p>
-            Sou reconhecido pelo <strong>acolhimento genuíno</strong> e por desenvolver
-            <strong>estratégias personalizadas</strong> para as necessidades de cada paciente.
-        </p>
-
-        <p>
-            Tenho uma <strong>abordagem culturalmente sensível</strong>, que garante um
-            atendimento inclusivo e adaptado às experiências e contextos individuais de cada paciente.
-        </p>
-
-        <button class="btn-agendar">Agendar Sessão</button>
+            <button class="btn-agendar">Agendar Sessão</button>
+        </Animate>
+        </div>
+    <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(1)">
+        <div class="about-image">
+            <img src="images/ceci4.jpg" alt="Felipe Almeida" class="profile-image">
+        </div>
+        </Animate>
     </div>
 
-    <div class="about-image">
-        <img src="images/ceci4.jpg" alt="Felipe Almeida" class="profile-image">
-    </div>
-</div>
 
 <div class="sintomas-section">
+    <Animate Animation="Animations.FadeIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
     <h4>PARA QUEM É?</h4>
     <h2>VOCÊ SE IDENTIFICA COM ALGUM DESSES SINTOMAS?</h2>
     <p>A psicoterapia vai te ajudar a melhorar.</p>
+    </Animate>
 
-    <div class="sintomas-grid">
-        @foreach (var sintoma in sintomas)
-        {
-            <div class="sintoma-item">@sintoma</div>
-        }
-    </div>
+    <Animate Animation="Animations.FadeRight" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(1)">
+        <div class="sintomas-grid">
+            @foreach (var sintoma in sintomas)
+            {
+                <div class="sintoma-item">@sintoma</div>
+            }
+        </div>
+    </Animate>
 </div>
 
 @code {
@@ -97,13 +107,17 @@
 
 <div class="terapia-section">
     <!-- Lado Esquerdo: Imagem Sobreposta -->
+
+    <Animate Animation="Animations.FadeUp" Once="true" Duration="TimeSpan.FromSeconds(2)">
     <div class="terapia-image">
         <div class="image-background"></div>
         <img src="/images/terapia.jpg" alt="Terapia Breve" class="main-image" />
     </div>
+    </Animate>
 
     <!-- Lado Direito: Texto e Botão -->
     <div class="terapia-text">
+    <Animate Animation="Animations.FadeDown" Once="true" Duration="TimeSpan.FromSeconds(2)">
         <h4>TERAPIA BREVE</h4>
         <h2>A MINHA ABORDAGEM</h2>
         <p>Oriento o meu trabalho pelo viés da <strong>psicoterapia breve</strong> sempre que o caso permite.</p>
@@ -111,19 +125,24 @@
         <p><strong>Meu objetivo nas sessões é te auxiliar nessa jornada de transformação e contribuir com novas perspectivas para as suas questões.</strong></p>
 
         <button class="btn-agendar">Agendar Sessão Online</button>
+    </Animate>
     </div>
 </div>
 
 <div class="faq-section">
     <div class="faq-left">
+        <Animate Animation="Animations.FadeLeft" Once="true" Duration="TimeSpan.FromSeconds(2)">
         <div class="faq-icon">
             <img src="images/clipart1317456.png" alt="FAQ Icon" />
         </div>
         <h2>Perguntas Frequentes</h2>
         <p>Tire as principais dúvidas aqui.</p>
+        </Animate>
     </div>
 
     <div class="faq-right">
+        <Animate Animation="Animations.FadeUp" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
+
         @for (int i = 0; i < faqQuestions.Count; i++)
         {
             <div class="faq-item">
@@ -136,6 +155,7 @@
                 </div>
             </div>
         }
+        </Animate>
     </div>
 </div>
 
