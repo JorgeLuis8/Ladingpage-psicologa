@@ -1,5 +1,4 @@
 
-
 .aboreto-regular {
     font-family: "Aboreto", serif;
     font-weight: 400;
@@ -114,10 +113,10 @@
 
 .features-container {
     display: flex;
-    justify-content: center; 
-    gap: 40px; 
+    justify-content: center;
+    gap: 40px;
     padding: 40px 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     background-color: #EBEBEB;
 }
  
@@ -127,7 +126,7 @@
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-}
+}       
  
     .feature-card:hover {
         transform: scale(1.01); 
@@ -149,13 +148,13 @@
  
 h3 {
     color: #525926; 
-    font-size:1.2rem;
+    font-size:1.4rem;
     margin-bottom: 10px;
 }
  
 p {
     color: #666;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
  
 strong {
