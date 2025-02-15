@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <PackageReference Include="BlazorAnimate" Version="3.0.0" />
-    <PackageReference Include="Majorsoft.Blazor.Components.Common.JsInterop" Version="1.5.0" />
     <PackageReference Include="MudBlazor" Version="8.2.0" />
   </ItemGroup>
 
