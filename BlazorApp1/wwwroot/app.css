@@ -586,10 +586,9 @@ strong {
 }
 
 .faq-icon img {
-    background-color: #535A27;
     padding: 20px;
     border-radius: 15px;
-    width: 80px;
+    height: 100px;
 }
 
 .faq-left h2 {
@@ -612,13 +611,13 @@ strong {
 
 .faq-item {
     border-bottom: 1px solid #ccc;
-    padding: 15px 0;
+    padding: 20px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
     .faq-item:hover {
-        background-color: #f0f0f0;
+        background-color: #ccc;
     }
 
 .faq-question {
