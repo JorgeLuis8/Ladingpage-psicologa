@@ -782,6 +782,24 @@ strong {
       transform: translateY(0);
     }
   }
+  /* Por padrão, oculta o logo */
+.Imagelogo {
+    display: none;
+}
+
+/* Em telas mobile (até 768px), exibe o logo e o posiciona fixo no canto esquerdo */
+@media (max-width: 768px) {
+    .Imagelogo {
+        display: block;
+        position: absolute;
+        left: 0.5rem;    /* Ajuste conforme necessário */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;     /* Ajuste o tamanho conforme necessário */
+        height: auto;
+    }
+}
+
 /* Botão hambúrguer fixo à direita (inicialmente oculto no desktop) */
 .hamburger {
     position: absolute;
