@@ -201,63 +201,112 @@ strong {
 }
 
 
-.footer {
-    background-color: #E3E3E3; /* Cor semelhante ao fundo da imagem */
-    color: #333;
-    padding: 40px 20px;
+/* ------------------------------
+   Footer Container
+------------------------------ */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os lados esquerdo e direito */
+    align-items: flex-start; /* Alinha itens no topo */
+    background-color: #E3E3E3; /* Fundo escuro */
+    color: #333; /* Texto branco */
+    padding: 40px;
+    gap: 50px; /* Espaço horizontal entre left e right */
+    flex-wrap: wrap; /* Em telas pequenas, empilha os blocos */
 }
 
-    .footer .container {
-        max-width: 1200px;
-        margin: auto;
+/* Lado Esquerdo */
+.footer-left {
+    flex: 1;
+    min-width: 280px; /* Largura mínima para não ficar muito estreito */
+    margin-bottom: 20px;
+}
+
+    .footer-left h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
     }
 
-.footer-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    text-align: left;
-}
+    .footer-left p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        max-width: 400px; /* Ajuste se quiser limitar a largura do texto */
+    }
 
-.footer-column {
-    flex: 1;
-    min-width: 250px;
-}
-
-.footer h3 {
-    font-size: 18px;
+/* Botão de CTA */
+.cta-button {
+    background-color: #00c06a; /* Verde do botão */
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-.footer p,
-.footer a {
-    font-size: 16px;
-    color: #333;
-    text-decoration: none;
+    .cta-button:hover {
+        background-color: #00a95c; /* Tom mais escuro no hover */
+    }
+
+/* Lado Direito */
+.footer-right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre a lista de contato e as redes sociais */
 }
 
-.footer ul {
+.contact-info {
     list-style: none;
     padding: 0;
+    margin: 0;
+    line-height: 1.6;
 }
 
-    .footer ul li {
-        margin-bottom: 5px;
+    .contact-info li {
+        margin-bottom: 10px;
     }
 
-        .footer ul li a:hover {
-            text-decoration: underline;
-        }
+    .contact-info strong {
+        color: #333;
+        margin-right: 6px;
+    }
 
-/* Rodapé inferior */
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 14px;
-    border-top: 1px solid #ccc;
+/* Redes Sociais */
+.social-icons a {
+    color: black;
+    margin-right: 12px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
+
+    .social-icons a:hover {
+        color: #00c06a; /* Muda para verde no hover */
+    }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right {
+        flex: none;
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+        .footer-left p {
+            max-width: 100%;
+        }
+}
+
 
 
 .about-section {
@@ -725,9 +774,7 @@ strong {
     color: #333;
     transition: color 0.3s ease;
   }
-  .nav-link:hover {
-    color: #007BFF;
-  }
+
   
   /* Media Query para telas até 768px */
   @media (max-width: 768px) {
@@ -846,7 +893,7 @@ strong {
 }
 
     .nav-link:hover {
-        color: #007BFF;
+        color: #B5BF69;
     }
 
 /* ========== Responsividade: telas até 768px ========== */
@@ -880,11 +927,13 @@ strong {
 /* Container principal */
 .schedule-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Mantém tudo centralizado */
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     width: 100%;
     padding: 20px;
+    column-gap: 300px; /* Espaço apenas entre colunas (horizontal) */
+    flex-wrap: wrap; /* Agora permite quebra para telas menores */
 }
 
 /* Ícone + Texto (sempre juntos e alinhados no centro) */
@@ -917,7 +966,11 @@ strong {
     font-weight: bold;
     text-align: center;
     color: #535A27;
-   
+    margin-bottom: 10px;
+}
+
+.icon-text-container img {
+    height: 300px;
 }
 
 /* Centraliza a tabela */
