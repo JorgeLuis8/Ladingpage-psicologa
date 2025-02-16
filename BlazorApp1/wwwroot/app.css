@@ -707,203 +707,96 @@ strong {
     }
 }
 
-/* Estilos para a navbar em geral */
+/* ================== Navbar principal ================== */
 .my-nav {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza os itens do menu no desktop */
+    padding: 0 20px;
     position: relative;
-  }
-  .nav-container {
-    position: relative;
-    width: 100%;
-    height: 60px;
-  }
-  
-  /* Logo fixo (opcional) */
-  .Imagelogo {
+}
+
+/* ========== Logo (somente no mobile) ========== */
+.Imagelogo {
+    display: none; /* Oculta no desktop */
     position: absolute;
     left: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    width: 60px;
+    width: 50px; /* Ajuste conforme necessário */
     height: auto;
-  }
-  
-  /* Checkbox oculto */
-  #menu-toggle {
-    display: none;
-  }
-  
-  /* Botão hambúrguer (aparece apenas em mobile) */
-  .hamburger {
+}
+
+/* Exibe a logo apenas no mobile */
+@media (max-width: 768px) {
+    .Imagelogo {
+        display: block;
+    }
+}
+
+/* ========== Menu de navegação (desktop) ========== */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem; /* Espaçamento entre os itens */
+}
+
+/* Estilo dos links */
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+/* Remove a cor azul ao clicar no link */
+.nav-link:focus, 
+.nav-link:active {
+    color: inherit !important; /* Mantém a cor original */
+    outline: none; /* Remove o contorno azul */
+    text-decoration: none;
+}
+
+
+/* ========== Botão hambúrguer (mobile) ========== */
+#menu-toggle {
+    display: none; /* Oculta o checkbox */
+}
+
+.hamburger {
+    display: none; /* Oculta no desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
     position: absolute;
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
-    height: 25px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
     cursor: pointer;
-  }
-  .hamburger span {
+}
+
+.hamburger span {
     display: block;
     height: 4px;
+    width: 100%;
     background: #333;
     border-radius: 2px;
-  }
-  
-  /* Menu de navegação (desktop) */
-  .nav-menu {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem;
-  }
-  .nav-link {
-    text-decoration: none;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-
-  
-  /* Media Query para telas até 768px */
-  @media (max-width: 768px) {
-    /* Exibe o botão hambúrguer */
-    .hamburger {
-      display: flex;
-    }
-    
-    /* Menu mobile: inicialmente invisível com transição */
-    .nav-menu {
-      position: absolute;
-      top: 60px;              /* Abaixo da navbar */
-      left: 50%;              /* Centralizado horizontalmente */
-      transform: translateX(-50%); /* Apenas horizontalmente */
-      width: 90%;
-      flex-direction: column;
-      align-items: center;
-      background: #fff;
-      border-top: 1px solid #ddd;
-      overflow: hidden;
-      max-height: 0;
-      opacity: 0;
-      transition: max-height 0.4s ease, opacity 0.4s ease;
-    }
-    
-    /* Quando o checkbox estiver marcado, mostra o menu */
-    #menu-toggle:checked + .hamburger + .nav-menu {
-      max-height: 500px;
-      opacity: 1;
-      padding: 1rem 0;
-    }
-    
-    /* Animação para os itens do menu: eles deslizam de cima */
-    .nav-menu li {
-      opacity: 0;
-      animation: slideInDown 0.8s forwards;
-    }
-    .nav-menu li:nth-child(1) { animation-delay: 0.2s; }
-    .nav-menu li:nth-child(2) { animation-delay: 0.4s; }
-    .nav-menu li:nth-child(3) { animation-delay: 0.6s; }
-    .nav-menu li:nth-child(4) { animation-delay: 0.8s; }
-  }
-  
-  /* Keyframes para slideInDown (vindo de cima) */
-  @keyframes slideInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  /* Por padrão, oculta o logo */
-.Imagelogo {
-    display: none;
 }
-
-/* Em telas mobile (até 768px), exibe o logo e o posiciona fixo no canto esquerdo */
-@media (max-width: 768px) {
-    .Imagelogo {
-        display: block;
-        position: absolute;
-        left: 0.5rem;    /* Ajuste conforme necessário */
-        top: 50%;
-        transform: translateY(-50%);
-        width: 60px;     /* Ajuste o tamanho conforme necessário */
-        height: auto;
-    }
-}
-
-/* Botão hambúrguer fixo à direita (inicialmente oculto no desktop) */
-.hamburger {
-    position: absolute;
-    right: 1rem; /* Distância da borda direita */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 25px;
-    flex-direction: column;
-    justify-content: space-between;
-    display: none; /* Só aparece no mobile */
-    cursor: pointer;
-}
-
-    .hamburger span {
-        display: block;
-        height: 4px;
-        background: #333;
-        border-radius: 2px;
-    }
-
-/* Menu centralizado no desktop */
-.nav-menu {
-    /* Posição absoluta para poder centralizar */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /* Exibe os itens em linha no desktop */
-    display: flex;
-    gap: 1rem; /* Espaço horizontal entre os links */
-}
-
-/* Links do menu */
-.nav-link {
-    text-decoration: none;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-    .nav-link:hover {
-        color: #B5BF69;
-    }
 
 /* ========== Responsividade: telas até 768px ========== */
 @media (max-width: 768px) {
-    /* Mostra o botão hambúrguer no mobile */
     .hamburger {
-        display: flex;
+        display: flex; /* Exibe o botão hambúrguer no mobile */
     }
 
-    /* Esconde o menu por padrão no mobile */
+    /* Esconde o menu no mobile por padrão */
     .nav-menu {
         display: none;
         position: absolute;
@@ -915,14 +808,15 @@ strong {
         background: #fff;
         border-top: 1px solid #ddd;
         padding: 1rem 0;
-        transform: none; /* Remove o translate no mobile */
+        transition: all 0.3s ease-in-out;
     }
 
     /* Exibe o menu quando o checkbox estiver marcado */
-    #menu-toggle:checked + .hamburger + .nav-menu {
+    #menu-toggle:checked ~ .nav-menu {
         display: flex;
     }
 }
+
 
 /* Container principal */
 .schedule-container {
