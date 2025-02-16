@@ -932,7 +932,7 @@ strong {
     justify-content: center;
     width: 100%;
     padding: 20px;
-    gap: 100px; /* Ou 100px, conforme sua preferência */
+    column-gap: 300px; /* Espaço apenas entre colunas (horizontal) */
     flex-wrap: wrap; /* Agora permite quebra para telas menores */
 }
 
