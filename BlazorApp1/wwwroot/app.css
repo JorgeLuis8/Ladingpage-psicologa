@@ -725,9 +725,7 @@ strong {
     color: #333;
     transition: color 0.3s ease;
   }
-  .nav-link:hover {
-    color: #007BFF;
-  }
+
   
   /* Media Query para telas até 768px */
   @media (max-width: 768px) {
@@ -846,7 +844,7 @@ strong {
 }
 
     .nav-link:hover {
-        color: #007BFF;
+        color: #B5BF69;
     }
 
 /* ========== Responsividade: telas até 768px ========== */
@@ -880,11 +878,13 @@ strong {
 /* Container principal */
 .schedule-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Mantém tudo centralizado */
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
     justify-content: center;
     width: 100%;
     padding: 20px;
+    flex-wrap: wrap; /* Agora permite quebra para telas menores */
 }
 
 /* Ícone + Texto (sempre juntos e alinhados no centro) */
@@ -895,6 +895,7 @@ strong {
     justify-content: center;
     text-align: center;
     margin-bottom: 20px; /* Espaço entre o texto e a tabela */
+    margin-right: 200px; /* Espaço entre os ícones */
 }
 
 /* Ícone sem fundo */
@@ -917,7 +918,11 @@ strong {
     font-weight: bold;
     text-align: center;
     color: #535A27;
-   
+    margin-bottom: 10px;
+}
+
+.icon-text-container img {
+    height: 300px;
 }
 
 /* Centraliza a tabela */
