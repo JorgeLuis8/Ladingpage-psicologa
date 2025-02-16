@@ -4,6 +4,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 
 
+@using BlazorAnimate
 
 
 <div class="Flex-Aboutme"> 
@@ -83,14 +84,12 @@
     <p>A psicoterapia vai te ajudar a melhorar.</p>
     </Animate>
 
-    <Animate Animation="Animations.FadeRight" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(1)">
-        <div class="sintomas-grid">
-            @foreach (var sintoma in sintomas)
-            {
-                <div class="sintoma-item">@sintoma</div>
-            }
-        </div>
-    </Animate>
+    <div class="sintomas-grid">
+        @foreach (var sintoma in sintomas)
+        {
+                    <div class="sintoma-item">@sintoma</div>
+        }
+    </div>
 </div>
 
 @code {
@@ -145,15 +144,15 @@
 
         @for (int i = 0; i < faqQuestions.Count; i++)
         {
-            <div class="faq-item">
-                <div class="faq-question" @onclick="() => ToggleFaq(i)">
-                    <span class="faq-toggle">@GetIcon(i)</span>
-                    @faqQuestions[i].Question
-                </div>
-                <div class="faq-answer @(faqState[i] ? "open" : "")">
-                    <p>@faqQuestions[i].Answer</p>
-                </div>
-            </div>
+                    <div class="faq-item">
+                        <div class="faq-question" @onclick="() => ToggleFaq(i)">
+                            <span class="faq-toggle">@GetIcon(i)</span>
+                            @faqQuestions[i].Question
+                        </div>
+                        <div class="faq-answer @(faqState[i] ? "open" : "")">
+                            <p>@faqQuestions[i].Answer</p>
+                        </div>
+                    </div>
         }
         </Animate>
     </div>
@@ -186,3 +185,34 @@
         public string Answer { get; set; } = string.Empty;
     }
 }
+<div class="schedule-container">
+    <!-- Bloco de Ícone e Texto -->
+    <div class="icon-text-container">
+        <!-- Ícone -->
+        
+
+        <!-- Texto abaixo do ícone -->
+        <div class="icon-text">Horários de Atendimento</div>
+    </div>
+
+    <!-- Bloco da Tabela -->
+    <div class="schedule-table-container">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atendimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Segunda-feira</td> <td>08:00 - 18:00</td></tr>
+                <tr><td>Terça-feira</td>   <td>08:00 - 18:00</td></tr>
+                <tr><td>Quarta-feira</td>  <td>08:00 - 18:00</td></tr>
+                <tr><td>Quinta-feira</td>  <td>08:00 - 18:00</td></tr>
+                <tr><td>Sexta-feira</td>   <td>08:00 - 18:00</td></tr>
+                <tr><td>Sábado</td>        <td>08:00 - 12:00</td></tr>
+                <tr><td>Domingo</td>       <td>Fechado</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
