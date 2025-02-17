@@ -7,7 +7,7 @@
 @using BlazorAnimate
 
 
-<div class="Flex-Aboutme"> 
+<div class="Flex-Aboutme" id = "inicio"> 
     <div class="Aboutme-Image">
         <img class="ImageAbout" src="images/ceci1.jpg" alt="Ceciimg1" />
     </div>
@@ -19,7 +19,9 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Curabitur sit amet mi non urna faucibus sollicitudin ac at turpis.
         </p>
-        <button class ="ButtonSend">Agendar Consulta Online</button>
+       <a href="#horario">
+  <button class="ButtonSend">Agendar Consulta Online</button>
+    </a>
         </Animate>
 
     </div>
@@ -45,7 +47,7 @@
 </div>
 </Animate>>
 
-    <div class="about-section">
+    <div class="about-section" id = "about">
         <div class="about-text">
         <Animate Animation="Animations.FadeUp" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
             <h1>Felipe Almeida</h1>
@@ -65,11 +67,12 @@
                 Tenho uma <strong>abordagem culturalmente sensível</strong>, que garante um
                 atendimento inclusivo e adaptado às experiências e contextos individuais de cada paciente.
             </p>
-
+            <a href = "#horario">
             <button class="btn-agendar">Agendar Sessão</button>
+             </a>
         </Animate>
         </div>
-    <Animate Animation="Animations.FadeLeft" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(1)">
+    <Animate Animation="Animations.FadeIn" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(1)">
         <div class="about-image">
             <img src="images/ceci4.jpg" alt="Felipe Almeida" class="profile-image">
         </div>
@@ -77,7 +80,7 @@
     </div>
 
 
-<div class="sintomas-section">
+<div class="sintomas-section" id = "sintomas">
     <Animate Animation="Animations.FadeIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
     <h4>PARA QUEM É?</h4>
     <h2>VOCÊ SE IDENTIFICA COM ALGUM DESSES SINTOMAS?</h2>
@@ -104,7 +107,7 @@
     };
 }
 
-<div class="terapia-section">
+<div class="terapia-section" id = "abordagem">
     <!-- Lado Esquerdo: Imagem Sobreposta -->
 
     <Animate Animation="Animations.FadeUp" Once="true" Duration="TimeSpan.FromSeconds(2)">
@@ -122,70 +125,66 @@
         <p>Oriento o meu trabalho pelo viés da <strong>psicoterapia breve</strong> sempre que o caso permite.</p>
         <p>Além disso, busco adaptar as técnicas e intervenções às necessidades específicas de cada paciente.</p>
         <p><strong>Meu objetivo nas sessões é te auxiliar nessa jornada de transformação e contribuir com novas perspectivas para as suas questões.</strong></p>
-
+    <a href = "#horario">
         <button class="btn-agendar">Agendar Sessão Online</button>
+        </a>
     </Animate>
     </div>
 </div>
 
-<div class="faq-section">
-    <div class="faq-left">
-        <Animate Animation="Animations.FadeLeft" Once="true" Duration="TimeSpan.FromSeconds(2)">
-        <div class="faq-icon">
-            <img src="images/clipart1317456.png" alt="FAQ Icon" />
-        </div>
-        <h2>Perguntas Frequentes</h2>
-        <p>Tire as principais dúvidas aqui.</p>
-        </Animate>
+<div class="faq-section" id="faq">
+  <div class="faq-left">
+    <div class="faq-icon">
+      <img src="images/clipart1317456.png" alt="FAQ Icon" />
     </div>
+    <h2>Perguntas Frequentes</h2>
+    <p>Tire as principais dúvidas aqui.</p>
+  </div>
 
-    <div class="faq-right">
-        <Animate Animation="Animations.FadeUp" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
-
-        @for (int i = 0; i < faqQuestions.Count; i++)
-        {
-                    <div class="faq-item">
-                        <div class="faq-question" @onclick="() => ToggleFaq(i)">
-                            <span class="faq-toggle">@GetIcon(i)</span>
-                            @faqQuestions[i].Question
-                        </div>
-                        <div class="faq-answer @(faqState[i] ? "open" : "")">
-                            <p>@faqQuestions[i].Answer</p>
-                        </div>
-                    </div>
-        }
-        </Animate>
+  <div class="faq-right">
+    <!-- Cada item da FAQ -->
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-static-icon">▶</span>
+        Quanto tempo dura uma sessão de terapia?
+      </div>
+      <div class="faq-answer">
+        <p>As sessões geralmente duram 50 minutos.</p>
+      </div>
     </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-static-icon">▶</span>
+        Como verificar os horários disponíveis?
+      </div>
+      <div class="faq-answer">
+        <p>Você pode verificar os horários disponíveis na nossa página de agendamentos.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-static-icon">▶</span>
+        Como agendar uma sessão?
+      </div>
+      <div class="faq-answer">
+        <p>Para agendar, basta clicar no botão 'Agendar Sessão Online' e escolher um horário.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-question">
+        <span class="faq-static-icon">▶</span>
+        Como funciona o tratamento?
+      </div>
+      <div class="faq-answer">
+        <p>O tratamento consiste em sessões regulares adaptadas às suas necessidades.</p>
+      </div>
+    </div>
+  </div>
 </div>
-
-@code {
-    private List<FaqItem> faqQuestions = new()
-    {
-        new FaqItem { Question = "Quanto tempo dura uma sessão de terapia?", Answer = "As sessões geralmente duram 50 minutos." },
-        new FaqItem { Question = "Como verificar os horários disponíveis?", Answer = "Você pode verificar os horários disponíveis na nossa página de agendamentos." },
-        new FaqItem { Question = "Como agendar uma sessão?", Answer = "Para agendar, basta clicar no botão 'Agendar Sessão Online' e escolher um horário." },
-        new FaqItem { Question = "Como funciona o tratamento?", Answer = "O tratamento consiste em sessões regulares adaptadas às suas necessidades." }
-    };
-
-    private bool[] faqState = new bool[4];
-
-    private void ToggleFaq(int index)
-    {
-        faqState[index] = !faqState[index];
-    }
-
-    private string GetIcon(int index)
-    {
-        return faqState[index] ? "▼" : "▶";
-    }
-
-    private class FaqItem
-    {
-        public string Question { get; set; } = string.Empty;
-        public string Answer { get; set; } = string.Empty;
-    }
-}
-<div class="schedule-container">
+<div class="schedule-container" id = "horario">
     <!-- Bloco de Ícone e Texto -->
     <!-- Bloco da Tabela -->
     <div class="schedule-table-container">

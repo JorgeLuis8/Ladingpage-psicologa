@@ -1,26 +1,34 @@
 <nav class="my-nav">
-    <div class="nav-container">
+  <div class="nav-container">
+    <img class="Imagelogo" src="images/logo.jpg" alt="Logo" />
 
-      <!-- Logo fixa no canto esquerdo -->
-      <img class="Imagelogo" src="images/logo.jpg" alt="Logo" />
+    <input type="checkbox" id="menu-toggle" />
 
-      <!-- Checkbox que controla o menu (hambúrguer) -->
-      <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-      <!-- Botão hambúrguer (fica no canto direito no mobile) -->
-      <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <!-- Menu centralizado no desktop -->
-      <ul class="nav-menu">
-        <li><a class="nav-link" href="#">Home</a></li>
-        <li><a class="nav-link" href="#">Sobre</a></li>
-        <li><a class="nav-link" href="#">Serviços</a></li>
-        <li><a class="nav-link" href="#">Contato</a></li>
-      </ul>
-
-    </div>
-  </nav>
+    <ul class="nav-menu">
+      <li>
+        <a class="nav-link" href="#inicio" onclick="document.getElementById('menu-toggle').checked = false;">Início</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#about" onclick="document.getElementById('menu-toggle').checked = false;">Sobre mim</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#sintomas" onclick="document.getElementById('menu-toggle').checked = false;">Sinais e Sintomas</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#abordagem" onclick="document.getElementById('menu-toggle').checked = false;">Minha Abordagem Terapêutica</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#faq" onclick="document.getElementById('menu-toggle').checked = false;">Dúvidas Frequentes</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#horario" onclick="document.getElementById('menu-toggle').checked = false;">Horários de Atendimento</a>
+      </li>
+    </ul>
+  </div>
+</nav>
