@@ -673,6 +673,7 @@ strong {
     font-size: 18px;
     font-weight: bold;
     color: #535A27;
+    cursor: pointer;
 }
 
 .faq-toggle {
@@ -706,7 +707,31 @@ strong {
         max-width: 100%;
     }
 }
+.faq-answer {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+}
 
+.faq-answer.open {
+    max-height: 200px; /* ajuste conforme necessário ou use auto com JavaScript */
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: max-height 0.8s cubic-bezier(0.25, 0.8, 0.5, 1),
+                opacity 0.8s cubic-bezier(0.25, 0.8, 0.5, 1),
+                transform 0.8s cubic-bezier(0.25, 0.8, 0.5, 1);
+  }
+  
+  .faq-answer.open {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 800px; /* Ajuste conforme a altura do conteúdo */
+  }
+  
 /* ================== Navbar principal ================== */
 .my-nav {
     background-color: #fff;
