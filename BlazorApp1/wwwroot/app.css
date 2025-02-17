@@ -788,7 +788,9 @@ strong {
     text-decoration: none;
 }
 
-
+.nav-link:hover {
+    color: black;
+}
 /* ========== Botão hambúrguer (mobile) ========== */
 #menu-toggle {
     display: none; /* Oculta o checkbox */
