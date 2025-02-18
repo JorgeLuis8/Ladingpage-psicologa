@@ -383,7 +383,9 @@ strong {
         background-color: #B5BF69;
         transition: 1.0s;
     }
-
+.btn-agendar{
+    text-decoration: none;
+}
 /* Imagem e Badge */
 .about-image {
     position: relative;
@@ -592,6 +594,8 @@ strong {
 
     .btn-agendar:hover {
         background-color: #8E974F;
+        text-decoration: none;
+        color: white;
     }
 
 /* Responsividade */
