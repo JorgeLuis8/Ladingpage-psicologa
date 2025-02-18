@@ -1,3 +1,18 @@
+/* Títulos elegantes e sofisticados */
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300; /* Fino e refinado */
+    letter-spacing: 0.03rem;
+}
+
+/* Textos modernos, leves e minimalistas */
+p, a, button {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 300; /* Mantém um visual limpo e elegante */
+    line-height: 1.7;
+}
+
+
 .aboreto-regular {
     font-family: "Aboreto", serif;
     font-weight: 400;
@@ -788,7 +803,10 @@ strong {
     text-decoration: none;
 }
 
-
+.nav-link:hover {
+    color: black;
+}
+/* ========== Botão hambúrguer (mobile) ========== */
 /* ========== Botão hambúrguer (mobile) ========== */
 #menu-toggle {
     display: none; /* Oculta o checkbox */
@@ -805,6 +823,7 @@ strong {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 1001; /* Garante que fique acima do menu */
 }
 
 .hamburger span {
@@ -813,12 +832,26 @@ strong {
     width: 100%;
     background: #333;
     border-radius: 2px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* ========== Responsividade: telas até 768px ========== */
+/* Quando o menu está aberto */
+#menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0; /* Esconde a barra do meio */
+}
+
+#menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Exibe o hambúrguer apenas no mobile */
 @media (max-width: 768px) {
     .hamburger {
-        display: flex; /* Exibe o botão hambúrguer no mobile */
+        display: flex;
     }
 
     /* Esconde o menu no mobile por padrão */
@@ -834,6 +867,7 @@ strong {
         border-top: 1px solid #ddd;
         padding: 1rem 0;
         transition: all 0.3s ease-in-out;
+        z-index: 1000; /* Garante que o menu fique abaixo do botão */
     }
 
     /* Exibe o menu quando o checkbox estiver marcado */
@@ -841,7 +875,6 @@ strong {
         display: flex;
     }
 }
-
 
 /* Container principal */
 .schedule-container {
