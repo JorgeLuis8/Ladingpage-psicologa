@@ -18,9 +18,10 @@
         <p class = "TextDesc">
           Cuidando da sua mente com atenção e profissionalismo para uma vida mais equilibrada.
         </p>
-       <a href="#horario">
-  <button class="ButtonSend">Agendar Consulta Online</button>
-    </a>
+      <button class="ButtonSend" onclick="scrollToHorario()">
+  Agendar Consulta Online
+</button>
+
         </Animate>
 
     </div>
@@ -58,14 +59,15 @@
             <p>
              Ofereço um atendimento empático e acolhedor, baseado em uma abordagem culturalmente sensível. Meu compromisso é garantir um espaço inclusivo e adaptado às vivências e realidades individuais de cada paciente, respeitando sua singularidade e contexto.
             </p>
-            <a href = "#horario">
-            <button class="btn-agendar">Agendar Sessão</button>
-             </a>
+           <button class="btn-agendar" onclick="scrollToHorario()">
+  Agendar Sessão
+</button>
+
         </Animate>
         </div>
     <Animate Animation="Animations.FadeIn" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(1)">
         <div class="about-image">
-            <img src="images/ceci4.jpg" alt="Felipe Almeida" class="profile-image">
+            <img src="images/ceci4.jpg" alt="Cecilia" class="profile-image">
         </div>
         </Animate>
     </div>
@@ -81,13 +83,13 @@
     <div class="sintomas-grid">
         @foreach (var sintoma in dificuldades)
         {
-                    <div class="sintoma-item">@sintoma</div>
+                        <div class="sintoma-item">@sintoma</div>
         }
     </div>
 </div>
 
 @code {
-    private List<string> dificuldades = new()
+  private List<string> dificuldades = new()
     {
         "Ansiedade no dia a dia",
         "Dificuldade em dizer não",
@@ -117,9 +119,8 @@
         <p>Acredito que cada indivíduo é único e, por isso, adapto minhas técnicas e intervenções às suas necessidades específicas. Meu foco é criar um ambiente acolhedor e seguro, onde você possa explorar seus sentimentos e desafios com autenticidade.</p>
       
         <p><strong>Meu propósito nas sessões é te acompanhar nessa jornada de autodescoberta, oferecendo suporte e novas perspectivas para que você encontre caminhos mais leves e significativos para suas questões.</strong></p>
-    <a href = "#horario">
-        <button class="btn-agendar">Agendar Sessão Online</button>
-        </a>
+     <button class="btn-agendar" onclick="scrollToHorario()">Agendar Sessão Online</button>
+
     </Animate>
     </div>
 </div>
@@ -138,7 +139,7 @@
     <div class="faq-item">
       <div class="faq-question">
         <span class="faq-static-icon">▶</span>
-        A terapia online é tão eficaz quanto a presencial?
+        Terapia online é eficaz?
       </div>
       <div class="faq-answer">
         <p>Sim! Estudos mostram que a terapia online pode ser tão eficiente quanto a presencial, desde que você tenha um ambiente tranquilo para as sessões.</p>
