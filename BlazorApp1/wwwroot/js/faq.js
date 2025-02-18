@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
       if(answer.classList.contains('open')) {
         answer.classList.remove('open');
         answer.style.maxHeight = null;
-        icon.textContent = "▶";
+        icon.textContent = "▶ ";
       } else {
         // Abre o item ajustando o max-height para o tamanho do conteúdo
         answer.classList.add('open');
         answer.style.maxHeight = answer.scrollHeight + "px";
-        icon.textContent = "▼";
+        icon.textContent = "▼ ";
       }
     });
   });
