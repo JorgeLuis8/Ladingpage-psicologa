@@ -14,7 +14,7 @@
     <div class="Aboutme-Text">
         <Animate Animation="Animations.FadeIn" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
         <h1 class = "TextH1">MARIA CECILIA FERREIRA LUZ</h1>
-        <p class = "TextName">PSICÓLOGA ONLINE | CRP:1234567</p>
+        <p class = "TextName">PSICÓLOGA ONLINE | CRP:21/06468</p>
         <p class = "TextDesc">
           Cuidando da sua mente com atenção e profissionalismo para uma vida mais equilibrada.
         </p>
@@ -29,19 +29,19 @@
 <Animate Animation="Animations.FadeUp" Once="true" Duration="TimeSpan.FromSeconds(2)">
 <div class="features-container">
     <div class="feature-card">
-        <h3>ATENDIMENTO ONLINE</h3>
-        <p>Você não precisa se locomover até o consultório, <strong>isso te poupa tempo</strong> e permite maior flexibilidade de horários.</p>
+        <h3>CUIDE DE VOCÊ, ONDE ESTIVER</h3>
+        <p>A terapia online permite que você se conecte com seu bem-estar sem precisar sair de casa. Mais comodidade para focar no que realmente importa: <strong>você!</strong></p>
     </div>
  
     <div class="feature-card">
  
-        <h3>LIBERDADE GEOGRÁFICA</h3>
-        <p>Você pode realizar as sessões de terapia de onde quer que esteja, desde que seja em um <strong>ambiente confortável.</strong></p>
+        <h3>MAIS AUTONOMIA NA SUA JORNADA</h3>
+        <p>Escolha o melhor horário e o lugar mais confortável para suas sessões. A terapia se adapta à sua rotina, e não o contrário.</p>
     </div>
  
     <div class="feature-card">
-        <h3>SIGILO E SEGURANÇA</h3>
-        <p>Assim como na terapia presencial, a terapia online é sigilosa e é realizada em uma <strong>plataforma segura.</strong></p>
+        <h3>ESPAÇO ACOLHEDOR E SEGURO</h3>
+        <p>Cada conversa acontece em um ambiente protegido, com total sigilo e respeito à sua privacidade. Aqui, você pode se expressar com tranquilidade.</p>
     </div>
 </div>
 </Animate>>
@@ -49,22 +49,14 @@
     <div class="about-section" id = "about">
         <div class="about-text">
         <Animate Animation="Animations.FadeUp" Easing="Easings.EaseIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
-            <h1>Felipe Almeida</h1>
-            <p class="crp">CRP: 03-25159</p>
+            <h1>Maria Cecília Ferreira Luz</h1>
+            <p class="crp">CRP: 21/06468</p>
             <p>
-                Sou psicólogo formado desde 2018 pela <strong>UNIFACS (Universidade de Salvador)</strong>,
-                com estágio em vulnerabilidade social, especialização em teoria cognitivo-comportamental e
-                <strong>formação em clínica racializada.</strong>
+                Sou psicóloga formada desde 2025 pelo <strong>IERSÁ (Instituto de Ensino Superior Raimundo de Sá)</strong>, com ênfase em políticas públicas. Atualmente, estou me especializando em Psicologia Clínica Humanista e Psicologia do Desenvolvimento.
             </p>
 
             <p>
-                Sou reconhecido pelo <strong>acolhimento genuíno</strong> e por desenvolver
-                <strong>estratégias personalizadas</strong> para as necessidades de cada paciente.
-            </p>
-
-            <p>
-                Tenho uma <strong>abordagem culturalmente sensível</strong>, que garante um
-                atendimento inclusivo e adaptado às experiências e contextos individuais de cada paciente.
+             Ofereço um atendimento empático e acolhedor, baseado em uma abordagem culturalmente sensível. Meu compromisso é garantir um espaço inclusivo e adaptado às vivências e realidades individuais de cada paciente, respeitando sua singularidade e contexto.
             </p>
             <a href = "#horario">
             <button class="btn-agendar">Agendar Sessão</button>
@@ -81,13 +73,13 @@
 
 <div class="sintomas-section" id = "sintomas">
     <Animate Animation="Animations.FadeIn" Once="true" Duration="TimeSpan.FromSeconds(2)">
-    <h4>PARA QUEM É?</h4>
-    <h2>VOCÊ SE IDENTIFICA COM ALGUM DESSES SINTOMAS?</h2>
-    <p>A psicoterapia vai te ajudar a melhorar.</p>
+   <h4>PARA QUEM É A TERAPIA?</h4>
+        <h2>VOCÊ TEM PASSADO POR ALGO PARECIDO?</h2>
+        <p>A terapia é um espaço seguro para acolher e transformar suas emoções.</p>
     </Animate>
 
     <div class="sintomas-grid">
-        @foreach (var sintoma in sintomas)
+        @foreach (var sintoma in dificuldades)
         {
                     <div class="sintoma-item">@sintoma</div>
         }
@@ -95,14 +87,14 @@
 </div>
 
 @code {
-    private List<string> sintomas = new()
+    private List<string> dificuldades = new()
     {
-        "Pensamentos Excessivos",
-        "Excesso de Cobrança",
-        "Dependência Emocional",
-        "Estresse Constante",
-        "Desgaste Emocional",
-        "Problemas de Autoestima"
+        "Ansiedade no dia a dia",
+        "Dificuldade em dizer não",
+        "Relacionamentos desgastantes",
+        "Sensação de esgotamento",
+        "Insegurança constante",
+        "Falta de motivação"
     };
 }
 
@@ -119,11 +111,12 @@
     <!-- Lado Direito: Texto e Botão -->
     <div class="terapia-text">
     <Animate Animation="Animations.FadeDown" Once="true" Duration="TimeSpan.FromSeconds(2)">
-        <h4>TERAPIA BREVE</h4>
+        <h4>Abordagem Centrada na Pessoa</h4>
         <h2>A MINHA ABORDAGEM</h2>
-        <p>Oriento o meu trabalho pelo viés da <strong>psicoterapia breve</strong> sempre que o caso permite.</p>
-        <p>Além disso, busco adaptar as técnicas e intervenções às necessidades específicas de cada paciente.</p>
-        <p><strong>Meu objetivo nas sessões é te auxiliar nessa jornada de transformação e contribuir com novas perspectivas para as suas questões.</strong></p>
+          <p>A Abordagem Centrada na Pessoa baseia-se no respeito à sua autonomia e no potencial de crescimento que existe em cada um. Nesse processo, a escuta ativa, a empatia e a aceitação incondicional são fundamentais para que você se sinta livre para expressar suas emoções, refletir sobre suas experiências e encontrar, no seu próprio ritmo, caminhos mais alinhados com quem você é.</p>
+        <p>Acredito que cada indivíduo é único e, por isso, adapto minhas técnicas e intervenções às suas necessidades específicas. Meu foco é criar um ambiente acolhedor e seguro, onde você possa explorar seus sentimentos e desafios com autenticidade.</p>
+      
+        <p><strong>Meu propósito nas sessões é te acompanhar nessa jornada de autodescoberta, oferecendo suporte e novas perspectivas para que você encontre caminhos mais leves e significativos para suas questões.</strong></p>
     <a href = "#horario">
         <button class="btn-agendar">Agendar Sessão Online</button>
         </a>
@@ -136,8 +129,8 @@
     <div class="faq-icon">
       <img src="images/clipart1317456.png" alt="FAQ Icon" />
     </div>
-    <h2>Perguntas Frequentes</h2>
-    <p>Tire as principais dúvidas aqui.</p>
+    <h2>Dúvidas Comuns</h2>
+    <p>Se ainda tiver alguma pergunta, entre em contato!</p>
   </div>
 
   <div class="faq-right">
@@ -145,44 +138,45 @@
     <div class="faq-item">
       <div class="faq-question">
         <span class="faq-static-icon">▶</span>
-        Quanto tempo dura uma sessão de terapia?
+        A terapia online é tão eficaz quanto a presencial?
       </div>
       <div class="faq-answer">
-        <p>As sessões geralmente duram 50 minutos.</p>
+        <p>Sim! Estudos mostram que a terapia online pode ser tão eficiente quanto a presencial, desde que você tenha um ambiente tranquilo para as sessões.</p>
       </div>
     </div>
-    
+
     <div class="faq-item">
       <div class="faq-question">
         <span class="faq-static-icon">▶</span>
-        Como verificar os horários disponíveis?
+        Como faço para agendar uma sessão?
       </div>
       <div class="faq-answer">
-        <p>Você pode verificar os horários disponíveis na nossa página de agendamentos.</p>
+        <p>Para agendar um horário, entre em contato pelo <strong>WhatsApp</strong>. Assim, podemos verificar juntos os dias e horários disponíveis.</p>
       </div>
     </div>
-    
+
     <div class="faq-item">
       <div class="faq-question">
         <span class="faq-static-icon">▶</span>
-        Como agendar uma sessão?
+        Preciso de algum preparo antes das sessões?
       </div>
       <div class="faq-answer">
-        <p>Para agendar, basta clicar no botão 'Agendar Sessão Online' e escolher um horário.</p>
+        <p>O ideal é encontrar um lugar silencioso e confortável, além de garantir uma boa conexão com a internet para que a conversa flua sem interrupções.</p>
       </div>
     </div>
-    
+
     <div class="faq-item">
       <div class="faq-question">
         <span class="faq-static-icon">▶</span>
-        Como funciona o tratamento?
+        E se eu não me adaptar à terapia?
       </div>
       <div class="faq-answer">
-        <p>O tratamento consiste em sessões regulares adaptadas às suas necessidades.</p>
+        <p>A adaptação faz parte do processo! Se sentir que algo não está funcionando, podemos ajustar a abordagem ou explorar outras possibilidades juntos.</p>
       </div>
     </div>
   </div>
 </div>
+
 <div class="schedule-container" id = "horario">
     <!-- Bloco de Ícone e Texto -->
     <!-- Bloco da Tabela -->
@@ -197,12 +191,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Segunda-feira</td> <td>08:00 - 18:00</td></tr>
-                <tr><td>Terça-feira</td>   <td>08:00 - 18:00</td></tr>
-                <tr><td>Quarta-feira</td>  <td>08:00 - 18:00</td></tr>
-                <tr><td>Quinta-feira</td>  <td>08:00 - 18:00</td></tr>
-                <tr><td>Sexta-feira</td>   <td>08:00 - 18:00</td></tr>
-                <tr><td>Sábado</td>        <td>08:00 - 12:00</td></tr>
+                <tr><td>Segunda-feira</td> <td>13:30 - 18:00</td></tr>
+                <tr><td>Terça-feira</td>   <td>13:30 - 18:00</td></tr>
+                <tr><td>Quarta-feira</td>  <td>13:30 - 18:00</td></tr>
+                <tr><td>Quinta-feira</td>  <td>13:30 - 18:00</td></tr>
+                <tr><td>Sexta-feira</td>   <td>13:30 - 18:00</td></tr>
+                <tr><td>Sábado</td>        <td> Fechado</td></tr>
                 <tr><td>Domingo</td>       <td>Fechado</td></tr>
             </tbody>
 
