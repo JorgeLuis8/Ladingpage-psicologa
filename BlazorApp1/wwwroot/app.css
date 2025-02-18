@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Títulos elegantes e sofisticados */
 h1, h2, h3 {
     font-family: 'Cormorant Garamond', serif;
