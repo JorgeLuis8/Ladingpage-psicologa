@@ -313,19 +313,31 @@ strong {
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start; /* Alinha os elementos à esquerda */
+        text-align: left; /* Garante que o texto fique alinhado à esquerda */
     }
 
     .footer-left, .footer-right {
-        flex: none;
-        max-width: 600px;
-        margin-bottom: 30px;
+        width: 100%;
+        max-width: 100%;
+        text-align: left; /* Alinha os textos dentro das divs */
     }
 
-        .footer-left p {
-            max-width: 100%;
-        }
+    .contact-info {
+        padding-left: 0; /* Remove espaçamento padrão */
+        text-align: left; /* Alinha os itens da lista */
+    }
+
+    .social-icons {
+        text-align: left; /* Alinha os ícones de redes sociais */
+    }
+
+    .social-icons a {
+        display: inline-block; /* Mantém os ícones na mesma linha */
+        margin-right: 10px; /* Ajusta o espaçamento entre os ícones */
+    }
 }
+
 
 
 
