@@ -1,0 +1,12 @@
+[
+    {
+        "outputFileName": "wwwroot/js/app.min.js",
+        "inputFiles": [
+            "wwwroot/js/faq.js",
+            "wwwroot/js/remover.js",
+            "wwwroot/js/scrolto.js",
+            "wwwroot/js/scrool.js"
+        ],
+        "minify": { "enabled": true }
+    }
+]
