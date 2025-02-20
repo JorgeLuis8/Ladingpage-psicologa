@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="BlazorAnimate" Version="3.0.0" />
+    <PackageReference Include="BundlerMinifier.Core" Version="3.2.449" />
     <PackageReference Include="MudBlazor" Version="8.2.0" />
   </ItemGroup>
 
